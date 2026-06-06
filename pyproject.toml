@@ -1,0 +1,12 @@
+[project]
+name = "argus-ueba"
+version = "0.1.0"
+description = "Agentless UEBA-lite for auth, auditd, and process execution logs."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+argus-ueba = "argus_ueba.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

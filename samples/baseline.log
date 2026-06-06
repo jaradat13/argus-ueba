@@ -1,0 +1,6 @@
+Jun  5 09:02:13 web01 sshd[101]: Accepted publickey for alice from 10.0.0.10 port 53022 ssh2
+Jun  5 09:04:44 web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Jun  5 10:18:21 web01 sshd[131]: Accepted publickey for bob from 10.0.0.11 port 53023 ssh2
+Jun  5 10:21:44 web01 sudo:    bob : TTY=pts/1 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+type=PATH msg=audit(1780654800.123:420): item=0 name="/home/alice/report.csv" inode=11 dev=08:01 mode=0100644 ouid=1000 ogid=1000 rdev=00:00 nametype=NORMAL acct="alice"
+type=EXECVE msg=audit(1780654860.123:421): argc=2 a0="systemctl" a1="status" comm="systemctl" acct="alice"
